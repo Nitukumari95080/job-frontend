@@ -17,7 +17,7 @@ const NavLinks = () => {
         <div
           key={index} // Correct placement of the `key` prop
           className={`h-full flex items-center border-t-[3px] ${
-            location.pathname === link.url ? "border-cinnamon-500 text-cinnamon-500" : "border-transparent"
+            location.pathname === link.url ? "border-cinnamon-600 text-cinnamon-600" : "border-transparent"
           }`}
         >
           <Link

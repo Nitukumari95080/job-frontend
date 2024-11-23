@@ -5,6 +5,7 @@ import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import './App.css';
 import HomePage from './Pages/HomePage';
+import FindeJobs from './Pages/FindJobs';
 
 const theme: MantineThemeOverride = {
   colors: {
@@ -19,6 +20,7 @@ const theme: MantineThemeOverride = {
       '#4f4f4f',
       '#454545',
       '#3d3d3d',
+      
     ] as const,
     cinnamon: [
       '#feffe4',
@@ -33,15 +35,18 @@ const theme: MantineThemeOverride = {
       '#793f01',
     ] as const,
   },
+
+  fontFamily:`poppinns,sens-serif`,
   primaryColor: 'cinnamon',
 };
 
 function App() {
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider defaultColorScheme='dark' theme={theme}>
       <BrowserRouter>
         <Routes>
           {/* Correct syntax for Route's element prop */}
+          <Route path='/find-jobs' element={<FindeJobs/>}/>
           <Route path="*" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
