@@ -5,6 +5,8 @@ import Comapany from '../Components/LandingPage/Comapany'
 import JobCategory from '../Components/LandingPage/JobCategory'
 import Working from '../Components/LandingPage/Working'
 import Testimonials from '../Components/LandingPage/Testimonials'
+import Subscibe from '../Components/LandingPage/Subscibe'
+import Footer from '../Components/Footer/Footer'
 
 
 const HomePage = () => {
@@ -17,6 +19,8 @@ const HomePage = () => {
        <JobCategory/>
        <Working/>
        <Testimonials/>
+       <Subscibe/>
+       <Footer/>
     </div>
     
     </>

@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <>
       <div className="w-full bg-mine-shaft-950 px-6 text-white h-20 flex justify-between items-center">
-        <div className="flex gap-1 items-center text-cinnamon-500">
+        <div className="flex gap-1 items-center text-cinnamon-600">
           <IconRobotFace className="h-8  w-8 stroke={2.25}" />
-          <div className="text-2xl font-semibold ">jobHUNT</div>
+          <div className="text-3xl font-semibold ">jobHUNT</div>
         </div>
         {NavLinks()}
         <div className="flex gap-2 items-center">
@@ -21,7 +21,7 @@ const Header = () => {
             <div>Nitu</div>
             <div>
               {/* With image */}
-              <Avatar src="boy.png" alt="it's me" />
+              <Avatar src="/avatar1.png" alt="it's me" />
             </div>
           </div>
           <div className="bg-mine-shaft-900 p-1.5 rounded-full">
