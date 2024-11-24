@@ -12,7 +12,7 @@ const NavLinks = () => {
   const location = useLocation();
 
   return (
-    <div className="flex gap-5 font-semibold text-mine-shaft-300 h-full items-center text-1xl">
+    <div className="flex gap-5 font-semibold !text-mine-shaft-100 h-full items-center text-1xl">
       {links.map((link, index) => (
         <div
           key={index} // Correct placement of the `key` prop

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Combobox, useCombobox,  } from "@mantine/core";
+import { Combobox, useCombobox,  } from "@mantine/core";
 import { IconAdjustments } from '@tabler/icons-react';
 const opt = [
   "Relevance",

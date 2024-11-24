@@ -4,8 +4,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Correct impo
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import './App.css';
+import { Divider } from "@mantine/core";
 import HomePage from './Pages/HomePage';
 import FindeJobs from './Pages/FindJobs';
+import Footer from './Components/Footer/Footer';
+import FindTalents from './Pages/FindTalents';
+import Header from './Components/Header/Header';
+import TalentProfile from './Pages/TalentProfile';
 
 const theme: MantineThemeOverride = {
   colors: {
@@ -43,12 +48,19 @@ const theme: MantineThemeOverride = {
 function App() {
   return (
     <MantineProvider defaultColorScheme='dark' theme={theme}>
+      
+      
       <BrowserRouter>
+      <Header/>
+      <Divider size="sm" mx="md"/>
         <Routes>
           {/* Correct syntax for Route's element prop */}
           <Route path='/find-jobs' element={<FindeJobs/>}/>
+          <Route path='/find-Talent' element={< FindTalents/>}/>
+          <Route path='/talent-profile' element={<TalentProfile/>}/>
           <Route path="*" element={<HomePage />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </MantineProvider>
   );
